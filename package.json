@@ -1,0 +1,44 @@
+{
+  "name": "@egen/cli",
+  "version": "0.1.0",
+  "description": "Command Line Iterface for generating ExpressJS projects",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 16.14"
+  },
+  "bin": {
+    "eg": "bin/egen.js"
+  },
+  "scripts": {
+    "start": "node bin/egen.js",
+    "dev": "npm run build && npm run start",
+    "dev:cli": "npm install -g . && chmod 777 /home/theaz/.npm-global/bin/* && clear && echo 'Type `eg` command to run CLI'",
+    "prepack": "npm run build",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "format": "prettier --write \"**/*.ts\""
+  },
+  "keywords": [
+    "CLI"
+  ],
+  "author": "The AZ",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chokidar": "^3.6.0",
+    "cli-table3": "^0.6.3",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.16",
+    "ora": "^8.0.1",
+    "rimraf": "^5.0.5",
+    "shelljs": "^0.8.5",
+    "source-map-support": "^0.5.21",
+    "tree-kill": "^1.2.2",
+    "typescript": "^5.4.2"
+  }
+}
