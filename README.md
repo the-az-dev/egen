@@ -5,9 +5,9 @@ Egen CLI (or Express Generator) - Command Line Application for generating and or
 
 ### For version 0.1.1 we have:
 
-<input type="checkbox" checked> List of commands (--help)
+<input type="checkbox" checked>  - [x] List of commands (--help)
 
-<input type="checkbox" checked> Version of CLI (--version)
+<input type="checkbox" checked> - [x] Version of CLI (--version)
 
 <input type="checkbox"> Creating based on `project.egen` config file ( <b>on progress</b> )
 
