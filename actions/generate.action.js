@@ -26,7 +26,7 @@ function generate(params) {
       /**
        * Ananlyze config file and run config execution
        */
-      generateProject(new ConfigExecutor(egen_path).execute(), activePath);
+      generateProjectBase(new ConfigExecutor(egen_path).execute(), activePath);
     } else {
       const egen_path = path.join(argument, config.EGEN_FILENAME);
       if (!fs.existsSync(egen_path)) {
@@ -41,14 +41,14 @@ function generate(params) {
       /**
        * Ananlyze config file and run config execution
        */
-      generateProject(new ConfigExecutor(egen_path).execute(), argument);
+      generateProjectBase(new ConfigExecutor(egen_path).execute(), argument);
     }
   }else{
     console.log(chalk.yellow('WARNING: This function is disable for open realese version'));
   }
 }
 
-async function generateProject(config, activePath) {
+async function generateProjectBase(config, activePath) {
   await new PackageModule(
     config.name,
     config.description,
