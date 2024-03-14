@@ -3,15 +3,15 @@
 ## What is this?
 Egen CLI (or Express Generator) - Command Line Application for generating and organizing project based on NodeJS + ExpressJS library. It`s a suitable tool which can help you to generate basic structure of ExpressJS project as fast as it can. Egen is designed to make it easy to create and work on a project, as well as to simplify the creation of new components for your future API. Egen includes basic amount of Databases (ex. MongoDB, MySQL) and basic types of Auth system (JWT Auth basic). 
 
-### For version 0.1.1 we have:
+### For version 0.1.3 we have:
 
-<input type="checkbox" checked>  - [x] List of commands (--help)
+<input type="checkbox" checked> ✅ List of commands (--help)
 
-<input type="checkbox" checked> - [x] Version of CLI (--version)
+<input type="checkbox" checked> ✅ Version of CLI (--version)
 
-<input type="checkbox"> Creating based on `project.egen` config file ( <b>on progress</b> )
+<input type="checkbox" checked> ✅ Creating project based on `project.egen` config file
 
-<input type="checkbox"> Adding new packages to `package.json` based on `project.egen` config file
+<input type="checkbox" checked> ✅ Adding new packages to `package.json` based on `project.egen` config file
 
 <input type="checkbox"> Generating new components (ex. controllers)
 

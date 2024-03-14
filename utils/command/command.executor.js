@@ -18,9 +18,12 @@ class Command {
     }
     const foundCommand = commands.find((command) => command.arg === this.args[0]);
     if (foundCommand) {
+      foundCommand.params = this.args.length >= 1 ? this.args.slice(1) : [];
       foundCommand.run();
+      return;
     } else {
-      throw new Error(chalk.red('No command found! Use `--help` to show list of commands'));
+      console.log(chalk.red('ERROR: No command found! Use `--help` to show list of commands'));
+      return;
     }
   }
 }

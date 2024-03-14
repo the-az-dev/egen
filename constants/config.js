@@ -1,4 +1,4 @@
-const VERSION = '0.1.1';
+const VERSION = require('../package.json').version;
 const EGEN_FILENAME = 'project.egen';
 
 module.exports = {
